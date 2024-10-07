@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 1.3rem;
+    background-color: hsl(210, 46%, 95%);
+    line-height: 1.5;
+    font-weight: 500;
+}
+.main{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@media(min-width:1200px){
+    .container{
+        width: 1140px;
+    }
+}
+.item{
+    padding: 3.2rem;
+    border-radius: 5rem;
+    box-shadow: 4rem 6rem 4.8rem -4.8rem rgba(72 85 106 / 25%);
+}
+.item .test-profile{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.item .test-profile img{
+    width: 3.2rem;
+    border-radius: 50%;
+}
+.item{
+    font-size: 1.1rem;
+    line-height: 1;
+    
+}
+.item h3{
+    font-size: 1.3rem;
+    line-height: 1;
+    color: white;
+}
+.item span{
+    font-size: 1.rem;
+    color: rgba(255 255 255 / .5);
+}
+.item bold{
+    margin-top:1.3rem ;
+    margin-bottom:1.3rem;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    color: white;
+}
+.item .review{
+    color: rgba(255 255 255 / .7);
+}
+.item2{
+    background-color:  hsl(217, 19%, 35%);
+
+}
+.item3{
+    background-color: hsl(0, 0%, 100%) ;
+}
+.item4{
+    background-color:hsl(219, 29%, 14%) ;
+}
+.item5{
+    background-color:hsl(0, 0%, 100%)   ;
+}
+.item1.quote{
+    background: url(images/bg-pattern-quotation.svg) no-repeat hsl(263, 55%, 52%);
+    background-position: top right 10%;
+}
+.item1 .test-profile img{
+    border-color: #9e73dc; 
+}
+.item4 .test-profile img{
+    background-color: hsl(263, 55%, 52%); ;
+}
+.item3 h3,
+.item5 h3{
+    
+    color:hsl(217, 19%, 35%) ;
+}
+.item3 span,
+.item5 span{
+    color: rgba(72 85 106 / .5);
+}
+.item3 .bold,
+.item5 .bold{
+    color: hsl(217, 19%, 35%);
+}
+.item3 .review,
+.item5 .review{
+    color:  rgba(72 85 106 / .7);
+}
+.grid{
+    display: grid;
+    gap: 2.4rem;
+}
+@media(min-width:768px){
+    
+
+ .grid{
+    grid-template-columns:  repeat (2,1fr);
+}
+ .item1{
+    grid-column: span 2;
+}
+ .item3{
+    grid-column: 1;
+}
+ .item4{
+    grid-column: span 2;
+}
+ .item5{
+    grid-column: 2;
+    grid-row: 2/4;
+}
+}
+@media(min-width:1200px){
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .item5{
+        grid-column: 4;
+        grid-row: 1/ span 2;
+    }
+}
