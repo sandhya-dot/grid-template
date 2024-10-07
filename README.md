@@ -1,1 +1,1 @@
-# grid-template
+# practice-template
