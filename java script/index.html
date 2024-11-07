@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Leaflet CSS for map styling -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    
+</head>
+<body>
+
+    <header>
+        <h1>Recent Earthquake Activity</h1>
+        <p>Visualizing recent earthquake data on the map.</p>
+    </header>
+
+    <div id="map"></div>
+
+    <footer>
+        <p>&copy; 2024 Earthquake Visualizer</p>
+    </footer>
+
+    <!-- Leaflet JS and Axios for fetching earthquake data -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
